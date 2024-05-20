@@ -20,14 +20,13 @@
       color: inherit;
       text-decoration: none;
     }
-    .block img {
-      width: 100%;
-      height: auto;
-    }
-    .large-block {
+    .large-square {
       height: 400px;
     }
-    .small-block {
+    .wide-rectangle {
+      height: 200px;
+    }
+    .small-square {
       height: 200px;
     }
   </style>
@@ -36,36 +35,46 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 mb-4">
-        <div class="block large-block" style="background-color: #9BDEAC;">
+        <div class="block large-square" style="background-color: #9BDEAC;">
           <a href="page1.html">
-            <img src="path/to/image1.jpg" alt="Block 1">
+            <img src="path/to/image1.jpg" alt="Block 1" style="width: 100%; height: 100%; object-fit: cover;">
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="block wide-rectangle" style="background-color: #E38B6D;">
+          <a href="page2.html">
+            <img src="path/to/image2.jpg" alt="Block 2" style="width: 100%; height: 100%; object-fit: cover;">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-3 mb-4">
+        <div class="block small-square" style="background-color: #FFF5C3;">
+          <a href="page3.html">
+            <img src="path/to/image3.jpg" alt="Block 3" style="width: 100%; height: 100%; object-fit: cover;">
           </a>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-4">
-        <div class="block small-block" style="background-color: #E38B6D;">
-          <a href="page2.html">Block 2</a>
+        <div class="block small-square" style="background-color: #9BDEAC;">
+          <a href="page4.html">
+            <img src="path/to/image4.jpg" alt="Block 4" style="width: 100%; height: 100%; object-fit: cover;">
+          </a>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-4">
-        <div class="block small-block" style="background-color: #FFF5C3;">
-          <a href="page3.html">Block 3</a>
+        <div class="block small-square" style="background-color: #E38B6D;">
+          <a href="page5.html">
+            <img src="path/to/image5.jpg" alt="Block 5" style="width: 100%; height: 100%; object-fit: cover;">
+          </a>
         </div>
       </div>
       <div class="col-6 col-md-3 mb-4">
-        <div class="block small-block" style="background-color: #9BDEAC;">
-          <a href="page4.html">Block 4</a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 mb-4">
-        <div class="block small-block" style="background-color: #E38B6D;">
-          <a href="page5.html">Block 5</a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 mb-4">
-        <div class="block large-block" style="background-color: #9BDEAC;">
+        <div class="block small-square" style="background-color: #9BDEAC;">
           <a href="page6.html">
-            <img src="path/to/image6.jpg" alt="Block 6">
+            <img src="path/to/image6.jpg" alt="Block 6" style="width: 100%; height: 100%; object-fit: cover;">
           </a>
         </div>
       </div>
