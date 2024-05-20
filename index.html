@@ -3,83 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Paloma</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .block {
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    body {
+      background-color: #D4B28C;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      background-color: #F4D1A1;
+      padding: 10px;
+    }
+    .navbar-brand {
+      font-size: 2rem;
+      color: #333;
+    }
+    .navbar-nav .nav-link {
+      color: #333;
+    }
+    .hero {
+      padding: 50px;
       text-align: center;
-      height: 100%;
-      color: white;
-      font-weight: bold;
+      background-color: #F4D1A1;
     }
-    .block a {
-      color: inherit;
-      text-decoration: none;
+    .hero img {
+      width: 100%;
+      height: auto;
     }
-    .large-square {
-      height: 400px;
+    .content-section {
+      padding: 50px;
+      background-color: #F3E0C0;
     }
-    .wide-rectangle {
-      height: 200px;
+    .content-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
-    .small-square {
-      height: 200px;
+    .content-section p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+    .service-section {
+      background-color: #F9ECC8;
+      padding: 50px;
+      text-align: center;
+    }
+    .service-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .service-section .service-item {
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 mb-4">
-        <div class="block large-square" style="background-color: #9BDEAC;">
-          <a href="page1.html">
-            <img src="path/to/image1.jpg" alt="Block 1" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">PALOMA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our Stylists</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sessions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Book Now</a></li>
+        </ul>
       </div>
-      <div class="col-12 col-md-6 mb-4">
-        <div class="block wide-rectangle" style="background-color: #E38B6D;">
-          <a href="page2.html">
-            <img src="path/to/image2.jpg" alt="Block 2" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <img src="path/to/hero-image.jpg" alt="Salon Image">
+      <h1>Palomas and Chill.</h1>
+      <button class="btn btn-primary">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Luxury Hair / Chill Vibes.</h2>
+          <p>Textured modern looks driven by Cali’s Paloma is a
+             relaxing space to experience luxury hair and self-care, combining
+             minimal design with natural textures for a truly calming and
+             pampering experience.</p>
+          <button class="btn btn-secondary">Let's Chat</button>
+        </div>
+        <div class="col-md-6">
+          <img src="path/to/content-image.jpg" alt="Content Image" class="img-fluid">
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-6 col-md-3 mb-4">
-        <div class="block small-square" style="background-color: #FFF5C3;">
-          <a href="page3.html">
-            <img src="path/to/image3.jpg" alt="Block 3" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
+  </section>
+
+  <!-- Services Section -->
+  <section class="service-section">
+    <div class="container">
+      <h2>It's a good day for a great hair day.</h2>
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <img src="path/to/service1.jpg" alt="Modern Haircolor" class="img-fluid">
+          <h3>Modern Haircolor</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-3 mb-4">
-        <div class="block small-square" style="background-color: #9BDEAC;">
-          <a href="page4.html">
-            <img src="path/to/image4.jpg" alt="Block 4" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
+        <div class="col-md-4 service-item">
+          <img src="path/to/service2.jpg" alt="Lived-in Haircuts" class="img-fluid">
+          <h3>Lived-in Haircuts</h3>
         </div>
-      </div>
-      <div class="col-6 col-md-3 mb-4">
-        <div class="block small-square" style="background-color: #E38B6D;">
-          <a href="page5.html">
-            <img src="path/to/image5.jpg" alt="Block 5" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 mb-4">
-        <div class="block small-square" style="background-color: #9BDEAC;">
-          <a href="page6.html">
-            <img src="path/to/image6.jpg" alt="Block 6" style="width: 100%; height: 100%; object-fit: cover;">
-          </a>
+        <div class="col-md-4 service-item">
+          <img src="path/to/service3.jpg" alt="Custom Extensions" class="img-fluid">
+          <h3>Custom Extensions</h3>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
